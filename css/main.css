@@ -1,0 +1,527 @@
+/*! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+body {
+  color: #C6878F;
+  background: #C6878F;
+  height: 100vh;
+  line-height: 1.6;
+  /*overflow: hidden;*/
+}
+.container{
+  width: 100%;
+  height: 100%;
+  /*overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;*/
+}
+.navbar1{
+  position:Absolute;
+  top:0;
+  z-index:1;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background: transparent;
+}
+.navbar1 ul{
+  display:flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
+.navbar1 ul li{
+  margin: 0 1rem;
+  padding: 1rem;
+  color: #F9A03F;
+}
+.navbar1 ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #F9A03F;
+}
+.navbar1 ul li a:hover{
+  color:black ;
+}
+section{
+  display:flex;
+  flex-direction:column;;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: center;
+}
+section h1{
+font-size: 4rem;
+}
+section p{
+font-size: 1.5rem;
+}
+
+@font-face {
+   'Bungee', cursive;
+   'Libre Barcode 128 Text', cursive;
+   'Press Start 2P', cursive;
+  'Rubik Mono One', sans-serif;
+  'Russo One', sans-serif;
+}
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+#wecomeparagraph {
+
+  top: 70%;
+  color: #8F6868;
+  align-content: baseline;
+  text-align: left;
+  position: absolute;
+  z-index: 901;
+  font-family: 'Russo One', sans-serif;
+  font-size: 16px;
+  left: 4.4%;
+}
+
+
+#hey{
+ position: absolute;
+  right: 4%;
+  top: -35%;
+  width: 35%;
+  height: 10%;
+  border-style: solid;
+  border-color: black;
+  background-color: black;
+  color: #8F6868;
+  font-size: 50px;
+  font-family: 'Bungee', cursive;
+  z-index: 1000;
+}
+#kunbee{
+  position: absolute;
+  right: 10%;
+  top: -25%;
+  width: 25%;
+  height: 28%;
+  border-style: solid;
+  transform: rotate(343deg);
+  background-color: black;
+  padding-top: -1px;
+  border-color: black;
+  color: #8F6868;
+  font-size: 150px;
+  font-family: 'Libre Barcode 128 Text', cursive;
+  z-index: 949;
+}
+#welcome{
+  position: absolute;
+  right: 4%;
+  top: 10%;
+  width: 55%;
+  height: 10%;
+  border-style: solid;
+  border-color: black;
+  background-color: black;
+  color: #8F6868;
+  font-size: 39px;
+  font-family: 'Bungee', cursive;
+  z-index: 950;
+}
+#horizontal-main-line{
+    width: 95%;
+    height: 30%;
+    z-index: 981;
+    position: absolute;
+    left: 2.6%;
+    top: 65%;
+    border-top:7px dotted #404040;
+  }
+#vertical-main-line{
+  width: 95%;
+  height: 80%;
+  z-index: 990;
+  position: absolute;
+  right: 5%;
+  top: 45%;
+  border-right:7px dotted #404040;
+}
+#backgroundRectangle{
+  width:91.6%;
+  height:50.7%;
+  border:1px solid rgba(255, 255, 255, 0);
+  position:  absolute;
+  right:4.4%;
+  top:64%;
+  background-color: #F5C3C2;
+  z-index: 900;
+}
+
+#fullpage {
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+
+#fullpage section { height: 100vh; }
+
+
+
+
+
+
+
+
+
+h2{
+  position:relative;
+  z-index:-999;
+  font-family:sans-serif;
+  color:pink;
+  text-align:center;
+  font-size:1.5em;
+}
+h1{
+  position:relative;
+  z-index:-999;
+  font-family:sans-serif;
+  text-align: center;
+  color:pink;
+  font-size:3em;
+  margin-top:20%;
+}
+#hamburger-button {
+  position: relative;
+  z-index: 9999; /*so it never gets lost under something*/
+  display: inline-block;
+  vertical-align: top;
+  height:15px;
+  width:20px;
+  margin-left:5%;
+  margin-top:5%;
+}
+
+#hamburger-button:hover {
+  cursor: pointer;
+  /* changes the cursor to pointer */
+}
+
+#hamburger-button > span {
+  display: block;
+  height: 5px;
+  margin-bottom: 5px;
+  width: 25px;
+  background-color: #F9A03F;
+  -webkit-transition-timing-function: linear; /* Safari and Chrome */
+  transition-timing-function: linear;
+  transition-duration:1s;
+}
+
+
+#hamburger-button.open > span:first-child {
+  -webkit-transform: translateY(6px) rotate(45deg); /* Chrome, Safari, Opera */
+  transform:translateY(6px) rotate(45deg);
+}
+
+
+#hamburger-button.open > span:nth-child(2) {
+  -webkit-transform: rotateY(90deg); /* Safari */
+  transform: rotateY(90deg);
+  /* rotates the second child on the Y AXIS ONLY 90 degrees so it disappears into a point */
+}
+
+#hamburger-button.open > span:last-child {
+  -webkit-transform: translateY(-6px) rotate(-45deg); /* Chrome, Safari, Opera */
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+
+.navbar{
+  position:absolute;
+  opacity:.9;
+  z-index:888; /*so its above the content but below the burger button*/
+  height:100vh;
+  width: 30vw;
+  left:-30vw;
+  transition:1s;
+  background-color:#8C5F66;
+  color:white;
+  z-index: 990;
+}
+
+.navbar.open{
+  left:0;
+}
+.navbar ul{
+  list-style:none;
+  margin-top:40%;
+  font-size:1.5em;
+}
+
+.navbar ul li{
+  border-bottom:1px solid pink;
+  margin-bottom:10px;
+  padding:5px;
+  text-align:left;
+}
+
+.navbar ul li:hover{
+  text-shadow:1px 1px 3px pink;
+  cursor:pointer;
+}
+
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
